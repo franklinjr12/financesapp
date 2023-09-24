@@ -1,0 +1,8 @@
+<h1>Finances</h1>
+<u1>
+  <% @bills.each do |bill| %>
+    <a href="/finances/<%= bill.id %>">
+        <li><%= bill.title %></li>
+    </a>
+  <% end %>
+</u1>
